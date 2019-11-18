@@ -1,0 +1,72 @@
+@import "bootstrap";
+@import "font-awesome";
+
+html, body {
+  height: 100%;
+}
+.clear {
+  clear: both;
+}
+.navbar {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.75em;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+  background-color: #0D805B;
+}
+.home-page {
+  background: #FFBC00;
+}
+.about-page {
+  background: #FFD243;
+}
+.portfolio-page {
+  background: #FFC219;
+}
+.book-recs-page {
+  background: #E6A800;
+}
+.blurb-box {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  
+}
+.mel-blurb {
+  font-size: 5em;
+  vertical-align: middle;
+  
+}
+.btn a {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+.btn a:hover {
+  color: #FFBC00;
+}
+.footer-icons {
+  margin: 10px;
+}
+.fa {
+  margin-right: 8px;
+}
+.footer-icons a:hover {
+  color: white;
+  text-decoration: none;
+}
+a {
+  color: #3ECB93;
+}
+.about-bio {
+  font-size: 1.75em;
+}
