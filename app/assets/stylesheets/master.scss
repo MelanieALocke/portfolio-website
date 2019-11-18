@@ -28,7 +28,7 @@ body {
   background: #FFBC00;
 }
 .about-page {
-  background: #FFD243;
+  background: #FFD240;
 }
 .portfolio-page {
   background: #FFC219;
@@ -46,6 +46,9 @@ body {
   font-size: 5em;
   vertical-align: middle;
   
+}
+.learn-more {
+  margin-top: 8px;
 }
 .btn a {
   color: white;
@@ -69,4 +72,7 @@ a {
 }
 .about-bio {
   font-size: 1.75em;
+}
+.email a:hover {
+  color: white;
 }
