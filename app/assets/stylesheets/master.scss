@@ -1,6 +1,46 @@
 @import "bootstrap";
 @import "font-awesome";
 
+//Animation CSS
+@keyframes duckwalk {
+  0%{
+    border-radius:0 0 0 0;
+    background: coral;
+    transform:rotate(0deg);
+  }
+  25%{
+    border-radius:50% 0 0 0;
+    background: orange;
+    transform:rotate(45deg);
+  }
+  50%{
+    border-radius:50% 50% 0 0;
+    background: red;
+    transform:rotate(90deg);
+
+  }
+  75%{
+    border-radius:50% 50% 50% 0;
+    background: lightcoral;
+    transform:rotate(135deg);
+  }
+  100%{
+    border-radius:50%;
+    background: darksalmon;
+    transform:rotate(180deg);
+  }
+}
+
+.duck-animation {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  outline:1px solid transparent;
+  animation: duckwalk 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+//End animation css
+
+
 html, body {
   height: 100%;
 }
