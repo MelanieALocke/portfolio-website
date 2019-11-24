@@ -1,6 +1,49 @@
 @import "bootstrap";
 @import "font-awesome";
 
+//Animation CSS
+.test-animation {
+  height: 40px;
+  width: 40px;
+  background-image: url('../assets/duck-foot.png');
+  background-size: cover;
+  animation: movement 1.5s steps(10) infinite;
+  // cubic-bezier: (1,.015,.295,1.225) alternate;
+}
+
+@keyframes movement {
+  0%{
+    left: 0;
+  }
+  10% {
+    left: 10%;
+  }
+  20% {
+    left: 20%;
+  }
+  30% {
+    left: 30%;
+  }
+  40% {
+    left: 40%;
+  }
+  50% {
+    left: 50%;
+  }
+  60% {
+    left: 60%;
+  }
+  70% {
+    left: 70%;
+  }
+  80% {
+    left: 80%;
+  }
+}
+
+//End animation css
+
+
 html, body {
   height: 100%;
 }
@@ -16,6 +59,7 @@ body {
   flex-direction: column;
   font-family: 'Oswald', sans-serif;
   color: white;
+  background: #FFBC00;
 }
 .content {
   flex: 1 0 auto;
@@ -23,18 +67,6 @@ body {
 .footer {
   flex-shrink: 0;
   background-color: #0D805B;
-}
-.home-page {
-  background: #FFBC00;
-}
-.about-page {
-  background: #FFD240;
-}
-.portfolio-page {
-  background: #FFC219;
-}
-.book-recs-page {
-  background: #E6A800;
 }
 .blurb-box {
   height: 100%;
@@ -45,7 +77,9 @@ body {
 .mel-blurb {
   font-size: 5em;
   vertical-align: middle;
-  
+}
+.head-shot {
+  width: 100%;
 }
 .learn-more {
   margin-top: 8px;
@@ -70,9 +104,39 @@ body {
 a {
   color: #3ECB93;
 }
+a:hover {
+  color: #0d805b;
+  text-decoration: none;
+}
 .about-bio {
   font-size: 1.75em;
 }
 .email a:hover {
   color: white;
+}
+.rec {
+  background: #ffffff;
+  border: solid #ffd243;
+  color: black;
+  font-size: 1em;
+  margin: 10px;
+  padding: 1em;
+  text-align: center;
+}
+.book-cover {
+  text-align: center;
+  height: 20em;
+}
+.title {
+  font-style: italic;
+}
+.review-content {
+  text-align: left;
+}
+.if-you-like {
+  color: #ef8d22;
+}
+#placeholder {
+  background: #FFBC00;
+  border: none;
 }
