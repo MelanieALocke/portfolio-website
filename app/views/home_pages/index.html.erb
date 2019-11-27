@@ -2,9 +2,9 @@
   <div class="content">
     <div class="blurb-box col-10 offset-1">
       <h1 class="mel-blurb">Melanie is a Frontend Developer and creative writer.</h1>
-      <button type="button" class="learn-more btn btn-outline-light">
-        <%= link_to 'Learn More', portfolio_index_path %>
-      </button>
+      <%= link_to portfolio_index_path do %>
+        <button type="button" class="learn-more btn btn-outline-light">Portfolio</button>
+      <% end %>
     </div>
   </div>
 </body>
