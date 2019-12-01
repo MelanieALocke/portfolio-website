@@ -12,6 +12,7 @@
 
   <body>
     <div class="content">
+      <!-- Navigation -->
       <nav class="navbar navbar-expand-md navbar-light">
         <%= link_to root_path do %>
           <%= image_tag "/assets/melanie-logo.png", class: 'navbar-brand', width:'55', :alt => "Melanie's logo, a teal diamond with initials within" %>
@@ -34,6 +35,8 @@
 
     <%= yield %>
   </body>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-icons float-right">
       <%= link_to "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" do %>

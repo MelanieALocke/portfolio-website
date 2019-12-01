@@ -24,22 +24,7 @@ body {
 .footer {
   flex-shrink: 0;
   background-color: #0D805B;
-}
-.blurb-box {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  
-}
-.mel-blurb {
-  font-size: 5em;
-  vertical-align: middle;
-}
-.head-shot {
-  width: 100%;
-}
-.learn-more {
-  margin-top: 8px;
+  margin-top: 30px;
 }
 .btn a {
   color: white;
@@ -68,24 +53,48 @@ a:hover {
   color: #3ECB93;
   text-decoration: none;
 }
+
+// Home Style
+.blurb-box {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.mel-blurb {
+  font-size: 5em;
+  vertical-align: middle;
+}
+.learn-more {
+  margin-top: 8px;
+}
+
+
+// About Style
+.head-shot {
+  width: 100%;
+}
 .about-bio {
   font-size: 1.75em;
 }
 .email a:hover {
   color: white;
 }
+
+// Book Recs Style
 .rec {
   background: #ffffff;
-  border: solid #ffd243;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
   font-size: 1em;
-  margin: 10px;
+  margin: 1.25em;
+  margin-bottom: 30px;
   padding: 1em;
   text-align: center;
 }
 .book-cover {
   text-align: center;
   height: 20em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .title {
   font-style: italic;
@@ -99,4 +108,39 @@ a:hover {
 #placeholder {
   background: #FFBC00;
   border: none;
+}
+
+// Portfolio Style
+.portfolio-page h3 {
+  text-align: center;
+}
+.project {
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-pic {
+  max-width: 100%;
+  height: 30vh;
+  oject-fit: cover;
+  display: block;
+  margin: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.project-name {
+  color: #ef8d22;
+}
+.project-org {
+  color: #0d805b;
+}
+#project-logo {
+  box-shadow: none;
+}
+#portfolio-container {
+  overflow: hidden;
+}
+.show {
+  display: block;
 }
