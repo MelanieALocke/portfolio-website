@@ -1,5 +1,77 @@
 <body>
-  <div class="content">
-
+  <div class="container content portfolio-page">
+    <div id="portfolio-toggle">
+      <!-- Control buttons -->
+      <!-- <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('coding')"> Coding</button>
+        <button class="btn" onclick="filterSelection('writing')"> Writing</button>
+      </div> -->
+    </div>
+    <br />
+    <br />
+    <!-- All Projects -->
+    <div class="containter" id="portfolio-container">
+      <!-- Projects Row 1 -->
+      <div class="row align-items-start">
+        <!-- personal website  -->
+        <div class="col-md project filterDiv coding">
+          <%= link_to root_path do %>
+            <%= image_tag "/assets/melanie-logo.png", class: 'project-pic', id: 'project-logo', :alt => "Melanie's logo, a teal diamond with white initals ML inside" %>
+            <br />
+            <h4 class="project-name">This Website</h4>
+            <h6 class="project-org">Peronsal project</h6>
+          <% end %>
+        </div>
+        <!-- Flixter  -->
+        <div class="col-md project filterDiv coding">
+          <%= link_to "https://flixter-melanie-locke.herokuapp.com/", :target => "_blank" do %>  
+            <%= image_tag "/assets/portfolio/flixter.png", class: 'project-pic', :alt => "Picture of Flixter, a video learning app" %>
+            <br />
+            <h4 class="project-name">Flixter</h4>
+            <h6 class="project-org">UC Berkeley</h6>
+          <% end %>
+        </div>
+        <!-- Take a Hike -->
+        <div class="col-md project filterDiv writing">
+          <%= link_to "https://d2jt48ltdp5cjc.cloudfront.net/users/25459/uploads/4c60a6fc-8b5d-438e-b46e-5eb22d35ff44.pdf", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/take-a-hike.jpg", class: 'project-pic', :alt => "Picture of Garden of the Gods" %>
+            <br />
+            <h4 class="project-name">Take a Hike</h4>
+            <h6 class="project-org">Colorado Hotel Magazine</h6>
+          <% end %>
+        </div>
+      </div>
+      <!-- Projects row 2 -->
+      <div class="row align-items-start">
+        <!-- hello dottie — Cultivate  -->
+        <div class="col-md project filterDiv writing">
+          <%= link_to "https://cultivate.ngo/blog/hello-dottie", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/hello-dottie.jpg", class: 'project-pic', :alt => "Picture of an old woman's hands holding book" %>
+            <br />
+            <h4 class="project-name">Hello Dottie</h4>
+            <h6 class="project-org">Cultivate</h6>
+          <% end %>
+        </div>
+        <!-- Nomster -->
+        <div class="col-md project filterDiv coding">
+          <%= link_to "https://nomster-melanie-locke.herokuapp.com/", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/nomster.png", class: 'project-pic', :alt => "Picture of Nomster, a restaurant recommendation app" %>
+            <br />
+            <h4 class="project-name">Nomster</h4>
+            <h6 class="project-org">UC Berkeley</h6>
+          <% end %>
+        </div>
+        <!-- Build healthy habits — cultivate -->
+        <div class="col-md project filterDiv writing">
+          <%= link_to "https://cultivate.ngo/blog/how-to-build-lasting-habits", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/build-lasting-habits.jpg", class: 'project-pic', :alt => "Picture of man with his arm around old woman" %>
+            <br />
+            <h4 class="project-name">Build Lasting Habits</h4>
+            <h6 class="project-org">Cultivate</h6>
+          <% end %>
+        </div>
+      </div>
+    </div> 
   </div>
 </body>
