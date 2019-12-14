@@ -4,6 +4,10 @@
 html, body {
   height: 100%;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 .clear {
   clear: both;
 }
@@ -16,22 +20,28 @@ body {
   flex-direction: column;
   font-family: 'Oswald', sans-serif;
   color: white;
-  background: #FFC219;
+  background: #FFBF00;
+}
+.yellow-text {
+  color: #FFBF00;
 }
 .content {
   flex: 1 0 auto;
 }
 .footer {
   flex-shrink: 0;
-  background-color: #0D805B;
+  background-color: #FFBF00;
   margin-top: 30px;
+}
+.btn {
+  color: white;
 }
 .btn a {
   color: white;
   font-family: 'Bebas Neue', cursive;
 }
 .btn a:hover {
-  color: #FFBC00;
+  color: #FFC219;
 }
 .footer-icons {
   margin: 10px;
@@ -40,17 +50,17 @@ body {
   margin-right: 8px;
 }
 .footer-icons a {
-  color: #3ECB93;
+  color: white;
 }
 .footer-icons a:hover {
-  color: white;
+  color: #009e74;
   text-decoration: none;
 }
 a {
-  color: #0d805b;
+  color: rgba(0, 0, 0, 0.5);
 }
 a:hover {
-  color: #3ECB93;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -64,9 +74,6 @@ a:hover {
   font-size: 5em;
   vertical-align: middle;
 }
-.learn-more {
-  margin-top: 8px;
-}
 
 
 // About Style
@@ -76,15 +83,21 @@ a:hover {
 .about-bio {
   font-size: 1.75em;
 }
-.email a:hover {
-  color: white;
-}
+
 
 // Book Recs Style
+.boxtop {
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #FFBF00;
+}
+.recs-intro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .rec {
-  background: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: black;
   font-size: 1em;
   margin: 1.25em;
   margin-bottom: 30px;
@@ -97,50 +110,82 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .title {
-  font-style: italic;
+  font-family: 'Bebas Neue', cursive;
+  color: #FFBF00;
+}
+.author {
+  font-family: 'Bebas Neue', cursive;
+  color: #FFBF00;
 }
 .review-content {
+  background: #ffffff;
+  color: black;
   text-align: left;
+  padding: 1em;
+}
+.review-content a {
+  color: #0d805b;
 }
 .if-you-like {
-  color: #ef8d22;
+  color: #FFBF00;
+  font-family: 'Bebas Neue', cursive;
 }
 #placeholder {
-  background: #FFBC00;
+  background: #FFc219;
   border: none;
 }
 
+
+
 // Portfolio Style
+.white-background {
+  background: white;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
 .portfolio-page h3 {
   text-align: center;
 }
+.portfolio-row {
+  margin: 8px -16px;
+}
+.portfolio-row, .portfolio-row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.portfolio-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .project {
+  width: 100%;
+  height: auto;
   padding: 20px;
-  margin: 10px;
   background: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .project-pic {
-  max-width: 100%;
-  height: 30vh;
-  oject-fit: cover;
-  display: block;
-  margin: auto;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 100%;
   text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 .project-name {
-  color: #ef8d22;
+  color: #FFBF00;
 }
 .project-org {
-  color: #0d805b;
+  color: #FFBF00;
 }
 #project-logo {
   box-shadow: none;
-}
-#portfolio-container {
-  overflow: hidden;
-}
-.show {
-  display: block;
 }
