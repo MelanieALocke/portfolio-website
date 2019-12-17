@@ -141,6 +141,10 @@ a:hover {
 .white-background {
   background: white;
 }
+.port-intro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .main {
   max-width: 1000px;
   margin: auto;
@@ -185,6 +189,9 @@ a:hover {
 }
 .project-org {
   color: #FFBF00;
+}
+.project-description {
+  color: #000000;
 }
 #project-logo {
   box-shadow: none;
