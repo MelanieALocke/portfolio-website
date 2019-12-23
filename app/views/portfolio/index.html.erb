@@ -1,7 +1,7 @@
 <body class="white-background">
   <div class="boxtop">
     <div class="port-intro col-10 offset-1", style="text-align: center;">
-      <h3>Resume | <%= link_to "Github", "https://github.com/MelanieALocke", :target => "_blank" %> | <%= link_to "LinkedIn", "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" %></h3>
+      <h3><%= link_to "Resume", "https://drive.google.com/file/d/1vK1Szyc-nOdFsiOZuohGpDzcX8OWgUwA/view?usp=sharing", :target => "_blank" %> | <%= link_to "Github", "https://github.com/MelanieALocke", :target => "_blank" %> | <%= link_to "LinkedIn", "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" %></h3>
     </div>
   </div>
   <div class="container content portfolio-page">
@@ -14,10 +14,13 @@
         <div class="project">
           <%= link_to root_path do %>
             <%= image_tag "/assets/melanie-logo.png", class: 'project-pic', id: 'project-logo', :alt => "Melanie's logo, a teal diamond with white initals ML inside" %>
-            <br />
-            <h4 class="project-name">This Website</h4>
           <% end %>
-          <p class="project-description">Built on rails, this website is an HTML + CSS cake with JavaScript icing on top.</p>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3 class="project-name">This Website</h3>
+              <p class="project-description">Built on rails, this website is an HTML + CSS cake with JavaScript icing on top.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="column">  
@@ -25,11 +28,13 @@
         <div class="project">
           <%= link_to "https://flixter-melanie-locke.herokuapp.com/", :target => "_blank" do %>  
             <%= image_tag "/assets/portfolio/flixter.png", class: 'project-pic', :alt => "Picture of Flixter, a video learning app" %>
-            <br />
-            <h4 class="project-name">Flixter</h4>
           <% end %>
-          <h6 class="project-org">UC Berkeley</h6>
-          <p class="project-description">A video-learning mock-up built on Rails and featuring algorithms, AWS-supported video uploading, and Stripe integration.</p>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3 class="project-name">Flixter</h3>
+              <p class="project-description">A video-learning mock-up built on Rails and featuring algorithms, AWS-supported video uploading, and Stripe integration.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="column">
@@ -37,11 +42,13 @@
         <div class="project">
           <%= link_to "https://nomster-melanie-locke.herokuapp.com/", :target => "_blank" do %>
             <%= image_tag "/assets/portfolio/nomster.png", class: 'project-pic', :alt => "Picture of Nomster, a restaurant recommendation app" %>
-            <br />
-            <h4 class="project-name">Nomster</h4>
           <% end %>
-          <h6 class="project-org">UC Berkeley</h6>
-          <p class="project-description">An app for restaurant recommendations featuring user log-in and authentification, Google Maps APIs, and built on rails.</p>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3 class="project-name">Nomster</h3>
+              <p class="project-description">An app for restaurant recommendations featuring user log-in and authentification, Google Maps APIs, and built on rails.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div> 
