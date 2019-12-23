@@ -1,3 +1,82 @@
 // Place all the styles related to the portfolio controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.white-background {
+  background: white;
+}
+.port-intro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.portfolio-page h3 {
+  text-align: center;
+}
+.portfolio-row {
+  margin: 8px -16px;
+}
+.portfolio-row, .portfolio-row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.portfolio-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.project {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: white;
+}
+.project-pic {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5 ease;
+  background-color: rgba(255, 255, 255, 1);
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project:hover .overlay {
+  opacity: .90;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.project-name {
+  color: #FFBF00;
+}
+.project-org {
+  color: #FFBF00;
+}
+.project-description {
+  color: #000000;
+  font-size: 18px;
+}
+#project-logo {
+  box-shadow: none;
+}

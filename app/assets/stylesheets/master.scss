@@ -15,6 +15,11 @@ body {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.75em;
 }
+.nav-link:hover {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #009e74;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -57,10 +62,10 @@ body {
   text-decoration: none;
 }
 a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
 a:hover {
-  color: #000000;
+  color: #009e74;
   text-decoration: none;
 }
 
@@ -133,66 +138,4 @@ a:hover {
 #placeholder {
   background: #FFc219;
   border: none;
-}
-
-
-
-// Portfolio Style
-.white-background {
-  background: white;
-}
-.port-intro {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-.portfolio-page h3 {
-  text-align: center;
-}
-.portfolio-row {
-  margin: 8px -16px;
-}
-.portfolio-row, .portfolio-row > .column {
-  padding: 8px;
-}
-.column {
-  float: left;
-  width: 50%;
-}
-.portfolio-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.project {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  background: white;
-}
-.project-pic {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-.project-name {
-  color: #FFBF00;
-}
-.project-org {
-  color: #FFBF00;
-}
-.project-description {
-  color: #000000;
-}
-#project-logo {
-  box-shadow: none;
 }
