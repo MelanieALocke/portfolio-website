@@ -1,14 +1,65 @@
 <body>
-  <div class="content container">
+  <div class="content container", id="about">
     <!-- Pic and blurb (lg – side by side, sm — photo over blurb) -->
-    <div class="row">
+    <div class="row", id="about-info">
       <div class="about-photo col-sm-4">
         <%= image_tag "/assets/melanie-headshot.jpg", class: 'head-shot', :alt => "Headshot of Melanie wearing a green sweater in front of a tree" %>
       </div>
       <div class="about-bio col">
-        <p>Melanie is a full-stack web developer with a passion for technology that brings people together.</p>
+        <h2>Melanie is a full-stack web developer with a passion for technology that brings people together.</h2>
         <p class="email">Get in touch: <%= mail_to "melanie.a.locke@gmail.com" %></p>
+        <h3><%= link_to "Resume", "https://drive.google.com/file/d/1vK1Szyc-nOdFsiOZuohGpDzcX8OWgUwA/view?usp=sharing", :target => "_blank" %> | <%= link_to "Github", "https://github.com/MelanieALocke", :target => "_blank" %> | <%= link_to "LinkedIn", "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" %></h3>
       </div>
     </div>
+  </div>
+  <br class="clear" />
+  <div class="col-12 container content", id="portfolio">
+    <br />
+    <br />
+    <!-- All Projects -->
+    <div class="containter portfolio-row" id="portfolio-container">
+      <div class="column">
+        <!-- personal website  -->
+        <div class="project">
+          <%= link_to root_path do %>
+            <%= image_tag "/assets/melanie-logo.png", class: 'project-pic', id: 'project-logo', :alt => "Melanie's logo, a teal diamond with white initals ML inside" %>
+          <% end %>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3 class="project-name">This Website</h3>
+              <p class="project-description">Built on rails, this website is an HTML + CSS cake with JavaScript icing on top.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">  
+        <!-- Flixter  -->
+        <div class="project">
+          <%= link_to "https://flixter-melanie-locke.herokuapp.com/", :target => "_blank" do %>  
+            <%= image_tag "/assets/portfolio/flixter.png", class: 'project-pic', :alt => "Picture of Flixter, a video learning app" %>
+          <% end %>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3 class="project-name">Flixter</h3>
+              <p class="project-description">A video-learning mock-up built on Rails and featuring algorithms, AWS-supported video uploading, and Stripe integration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Nomster -->
+        <div class="project">
+          <%= link_to "https://nomster-melanie-locke.herokuapp.com/", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/nomster.png", class: 'project-pic', :alt => "Picture of Nomster, a restaurant recommendation app" %>
+          <% end %>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3 class="project-name">Nomster</h3>
+              <p class="project-description">An app for restaurant recommendations featuring user log-in and authentification, Google Maps APIs, and built on rails.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
 </body>
