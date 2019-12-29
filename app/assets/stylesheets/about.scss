@@ -3,9 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #about {
-  height: 600px;
+  height: 85vh;
 }
 #about-info {
+  height: 100%;
   padding-top: 175px;
   padding-bottom: 200px;
 }
@@ -13,11 +14,18 @@
   width: 100%;
 }
 .about-bio {
-  font-size: 1.75em;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#port-title {
+  color: black;
+  text-align: left;
 }
 #portfolio {
   background-color: white;
   margin-bottom: 0px;
+  padding-bottom: 20px;
 }
 .portfolio-row {
   margin: 8px -16px;
