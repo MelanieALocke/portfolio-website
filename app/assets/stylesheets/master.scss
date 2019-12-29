@@ -7,6 +7,11 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  background-color: #FFB300;
 }
 .clear {
   clear: both;
@@ -20,23 +25,15 @@ body {
   text-decoration: underline;
   text-decoration-color: #009e74;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  background: #FFBF00;
-}
 .yellow-text {
-  color: #FFBF00;
+  color: #FFB300;
 }
 .content {
   flex: 1 0 auto;
 }
 .footer {
   flex-shrink: 0;
-  background-color: #FFBF00;
-  margin-top: 30px;
+  background-color: #FFB300;
 }
 .btn {
   color: white;

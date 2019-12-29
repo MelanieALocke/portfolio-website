@@ -3,11 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .blurb-box {
-  height: 100%;
+  position: relative;
+  height: 500px;
   width: 100%;
   text-align: center;
+  vertical-align: middle;
 }
 .mel-blurb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
   font-size: 5em;
-  vertical-align: middle;
+  transform: translate(-50%, -50%);
+}
+#port-link:hover {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #009e74;
 }

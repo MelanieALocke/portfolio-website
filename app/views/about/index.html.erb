@@ -1,14 +1,59 @@
 <body>
-  <div class="content container">
+  <div class="content container", id="about">
     <!-- Pic and blurb (lg – side by side, sm — photo over blurb) -->
-    <div class="row">
+    <div class="row", id="about-info">
       <div class="about-photo col-sm-4">
         <%= image_tag "/assets/melanie-headshot.jpg", class: 'head-shot', :alt => "Headshot of Melanie wearing a green sweater in front of a tree" %>
       </div>
       <div class="about-bio col">
-        <p>Melanie is a full-stack web developer with a passion for technology that brings people together.</p>
+        <br />
+        <h3>Melanie is a full-stack web developer with a passion for technology that brings people together.</h3>
         <p class="email">Get in touch: <%= mail_to "melanie.a.locke@gmail.com" %></p>
+        <p><%= link_to "Resume", "https://drive.google.com/file/d/1vK1Szyc-nOdFsiOZuohGpDzcX8OWgUwA/view?usp=sharing", :target => "_blank" %> | <%= link_to "Github", "https://github.com/MelanieALocke", :target => "_blank" %> | <%= link_to "LinkedIn", "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" %></p>
       </div>
     </div>
+  </div>
+  <br class="clear" />
+  <div class="col-12 container content", id="portfolio">
+    <br />
+    <h1 id="port-title">Works</h1>
+    <br />
+    <!-- All Projects -->
+    <div class="containter portfolio-row" id="portfolio-container">
+      <div class="column">  
+        <!-- Flixter  -->
+        <div class="project">
+          <%= link_to "https://flixter-melanie-locke.herokuapp.com/", :target => "_blank" do %>  
+            <%= image_tag "/assets/portfolio/flixter.png", class: 'project-pic', :alt => "Picture of Flixter, a video learning app" %>
+          <% end %>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3><%= link_to 'Flixter', "https://flixter-melanie-locke.herokuapp.com/", :target => "_blank", class: 'project-name' %></h3>
+              <p class="project-description">A video-learning mock-up built on Rails and featuring algorithms, AWS-supported video uploading, and Stripe integration.</p>
+              <%= link_to "https://github.com/MelanieALocke/flixter" do %>
+                <i class="fa fa-github-square fa-lg"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Nomster -->
+        <div class="project">
+          <%= link_to "https://nomster-melanie-locke.herokuapp.com/", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/nomster.png", class: 'project-pic', :alt => "Picture of Nomster, a restaurant recommendation app" %>
+          <% end %>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3><%= link_to 'Nomster', "https://nomster-melanie-locke.herokuapp.com/", :target => "_blank", class: 'project-name' %></h3>
+              <p class="project-description">An app for restaurant recommendations featuring user log-in and authentification, Google Maps APIs, and built on rails.</p>
+              <%= link_to "https://github.com/MelanieALocke/nomster" do %>
+                <i class="fa fa-github-square fa-lg"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
 </body>
