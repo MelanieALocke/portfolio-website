@@ -10,7 +10,7 @@
         <br />
         <h3>Melanie is a full-stack web developer with a passion for technology that brings people together.</h3>
         <p class="email">Get in touch: <%= mail_to "melanie.a.locke@gmail.com" %></p>
-        <p><%= link_to "Resume", "https://drive.google.com/file/d/1vK1Szyc-nOdFsiOZuohGpDzcX8OWgUwA/view?usp=sharing", :target => "_blank" %> | <%= link_to "Github", "https://github.com/MelanieALocke", :target => "_blank" %> | <%= link_to "LinkedIn", "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" %></p>
+        <p><%= link_to "CV", "https://drive.google.com/file/d/1GCZ_-RTPNHz9bJnKQs3CBH9WzrLOPyWI/view?usp=sharing", :target => "_blank" %> | <%= link_to "Github", "https://github.com/MelanieALocke", :target => "_blank" %> | <%= link_to "LinkedIn", "https://www.linkedin.com/in/melanie-a-locke/", :target => "_blank" %></p>
       </div>
 
     </div>
@@ -23,6 +23,47 @@
 
     <!-- All Projects -->
     <div class="containter portfolio-row" id="portfolio-container">
+
+      <div class="column">
+        <!-- Mello Task Tracker -->
+        <div class="project">
+
+          <%= link_to "hhttps://mello-melanie-locke.herokuapp.com/", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/mello.jpg", class: 'project-pic', :alt => "Image of Mello app, a task tracker app" %>
+          <% end %>
+
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3><%= link_to 'Mello', "https://mello-melanie-locke.herokuapp.com/", :target => "_blank", class: 'project-name' %></h3>
+              <p class="project-description">Mello is a task tracker app featuring interactive boards, lists, and tasks, user personalization, and user collaboration. Built on Rails with JavaScript.</p>
+              <%= link_to "https://github.com/MelanieALocke/mello-task-tracker" do %>
+                <i class="fa fa-github-square fa-lg"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <!-- Pets Be Social -->
+        <div class="project">
+
+          <%= link_to "https://petsbesocial.herokuapp.com/", :target => "_blank" do %>
+            <%= image_tag "/assets/portfolio/petsBeSocial.jpg", class: 'project-pic', :alt => "Picture of Pets Be Social, a social media app for pets" %>
+          <% end %>
+
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3><%= link_to 'Pets Be Social', "https://petsbesocial.herokuapp.com/", :target => "_blank", class: 'project-name' %></h3>
+              <p class="project-description">A web-based social media app for pets, Pets Be Social is a team project built with Ruby on Rails, JavaScript, AWS S3 integration, and Agile methodologies.</p>
+              <%= link_to "https://github.com/FinalProjectUCBerkleyAug/final_project" do %>
+                <i class="fa fa-github-square fa-lg"></i>
+              <% end %>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <div class="column"> 
         <!-- Flixter  -->
@@ -58,27 +99,6 @@
               <h3><%= link_to 'Nomster', "https://nomster-melanie-locke.herokuapp.com/", :target => "_blank", class: 'project-name' %></h3>
               <p class="project-description">An app for restaurant recommendations featuring user log-in and authentification, Google Maps APIs, and built on rails.</p>
               <%= link_to "https://github.com/MelanieALocke/nomster" do %>
-                <i class="fa fa-github-square fa-lg"></i>
-              <% end %>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="column">
-        <!-- Pets Be Social -->
-        <div class="project">
-
-          <%= link_to "https://petsbesocial.herokuapp.com/", :target => "_blank" do %>
-            <%= image_tag "/assets/portfolio/petsBeSocial.jpg", class: 'project-pic', :alt => "Picture of Pets Be Social, a social media app for pets" %>
-          <% end %>
-
-          <div class="overlay">
-            <div class="overlay-text">
-              <h3><%= link_to 'Pets Be Social', "https://petsbesocial.herokuapp.com/", :target => "_blank", class: 'project-name' %></h3>
-              <p class="project-description">A web-based social media app for pets, Pets Be Social is a team project built with Ruby on Rails, JavaScript, AWS S3 integration, and Agile methodologies.</p>
-              <%= link_to "https://github.com/FinalProjectUCBerkleyAug/final_project" do %>
                 <i class="fa fa-github-square fa-lg"></i>
               <% end %>
             </div>
